@@ -1,40 +1,39 @@
 package OOPs;
 
- class Employee {
+class Employee {
   int id;
-  int salary;
   String name;
-  public int printSalary() {
-    return salary;
+  int salary;
+  public void printDetails() {
+    System.out.println("My Id is " + id);
+    System.out.println("My name is " + name);
   }
-  public void printDetails(){
-    System.out.println("My id is " + id);
-    System.out.println("and my name is " + name);
+
+  public int getsalary(){
+    return salary;
   }
 }
 
 public class Custom_class {
   public static void main(String[] args) {
-    System.out.println("This is our custom class");
-    Employee sourav = new Employee(); //Instantiating a new Employee object
-    Employee john = new Employee();
-    // Setting Attributes for Sourav
-    sourav.id=13;
-    sourav.salary = 30000;
+    System.out.println("This is a custom class");
+    Employee john = new Employee();//Instantiating a new Employee object
+    Employee sourav = new Employee();//Instantiating a new Employee object
+    //Setting properties/attributes for john
+    john.id=12; 
+    john.name="codeWithJohn";
+    john.salary = 12000;
+    //Setting properties/attributes for sourav
+    sourav.id=14; 
     sourav.name="SouravCodes101";
-    
-    // Setting Attributes for John
-    john.id= 15;
-    john.salary=25000;
-    john.name="JohnDoe";
+    sourav.salary = 12000;
+    //Printing the attributes
+    // System.out.println(john.id);
+    // System.out.println(john.name);
 
-    //Printing the Attributes
-    sourav.printDetails();
     john.printDetails();
-
-    int salary = john.printSalary();
+    sourav.printDetails();
+    int salary = john.getsalary();
     System.out.println(salary);
-    // System.out.println(sourav.id);
-    // System.out.println(sourav.name);
   }
 }
