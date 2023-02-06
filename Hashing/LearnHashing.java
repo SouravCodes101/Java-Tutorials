@@ -45,14 +45,14 @@ public class LearnHashing {
     
     System.out.println();
     
-    Set<String> keys = map.keySet();
-    for(String key: keys) {
-      System.out.println("Key=" + key + " " + " value=" + map.get(key));
-    }
-    System.out.println();
+    // Set<String> keys = map.keySet();
+    // for(String key: keys) {
+    //   System.out.println("Key=" + key + " " + " value=" + map.get(key));
+    // }
+    // System.out.println();
     
-    map.remove("China");
-    System.out.println(map);
+    // map.remove("China");
+    // System.out.println(map);
 
   }
 }
